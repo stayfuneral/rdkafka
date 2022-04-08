@@ -139,4 +139,12 @@ class RdKafkaProducer implements Producer
 
         return \RD_KAFKA_PARTITION_UA;
     }
+
+    /**
+     * @return VendorProducer
+     */
+    public function getVendorProducer(): VendorProducer
+    {
+        return $this->producer;
+    }
 }
